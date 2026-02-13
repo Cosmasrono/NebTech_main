@@ -25,38 +25,44 @@ const services = [
     { 
         title: 'AI & Machine Learning', 
         icon: '🤖', 
-        description: 'Harness the power of artificial intelligence to automate processes, predict outcomes, and gain competitive insights. Our AI solutions transform raw data into strategic business advantages.',
-        features: ['Natural Language Processing', 'Predictive Analytics', 'Computer Vision', 'Deep Learning Models']
+        description: 'Harness the power of artificial intelligence to automate processes, predict outcomes, and gain competitive insights.',
+        features: ['Natural Language Processing', 'Predictive Analytics', 'Computer Vision', 'Deep Learning Models'],
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80'
     },
     { 
         title: 'Enterprise Architecture', 
         icon: '🏗️', 
-        description: 'Design scalable, resilient systems that grow with your business. We create technology roadmaps that align with your strategic objectives and ensure long-term sustainability.',
-        features: ['System Design', 'Microservices Architecture', 'API Strategy', 'Technology Roadmapping']
+        description: 'Design scalable, resilient systems that grow with your business and ensure long-term sustainability.',
+        features: ['System Design', 'Microservices Architecture', 'API Strategy', 'Technology Roadmapping'],
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80'
     },
     { 
         title: 'Microsoft Dynamics 365', 
         icon: '💼', 
-        description: 'Streamline operations with Business Central implementation and customization. We optimize your ERP to match your unique business processes and drive operational excellence.',
-        features: ['BC Implementation', 'Custom Extensions', 'Integration Services', 'Training & Support']
+        description: 'Streamline operations with Business Central implementation and customization that drives operational excellence.',
+        features: ['BC Implementation', 'Custom Extensions', 'Integration Services', 'Training & Support'],
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
     },
     { 
         title: 'Cybersecurity', 
         icon: '🔒', 
-        description: 'Protect your digital assets with comprehensive security solutions. From threat assessment to compliance management, we ensure your business stays secure in an evolving threat landscape.',
-        features: ['Security Audits', 'Penetration Testing', 'Compliance Management', '24/7 Monitoring']
+        description: 'Protect your digital assets with comprehensive security solutions and compliance management.',
+        features: ['Security Audits', 'Penetration Testing', 'Compliance Management', '24/7 Monitoring'],
+        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80'
     },
     { 
         title: 'Cloud Infrastructure', 
         icon: '☁️', 
-        description: 'Leverage the power of AWS, Azure, and Google Cloud with expert migration and management. We build scalable, cost-effective cloud solutions with automated DevOps pipelines.',
-        features: ['Cloud Migration', 'DevOps Automation', 'Infrastructure as Code', 'Multi-Cloud Strategy']
+        description: 'Leverage AWS, Azure, and Google Cloud with expert migration and management solutions.',
+        features: ['Cloud Migration', 'DevOps Automation', 'Infrastructure as Code', 'Multi-Cloud Strategy'],
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80'
     },
     { 
         title: 'Custom Development', 
         icon: '💻', 
-        description: 'Build bespoke web and mobile applications tailored to your exact requirements. Modern frameworks, clean code, and performance optimization are our standard.',
-        features: ['Web Applications', 'Mobile Apps', 'Progressive Web Apps', 'API Development']
+        description: 'Build bespoke web and mobile applications with modern frameworks and clean code.',
+        features: ['Web Applications', 'Mobile Apps', 'Progressive Web Apps', 'API Development'],
+        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80'
     },
 ];
 
@@ -398,15 +404,22 @@ onUnmounted(() => {
                         <h3 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             Pioneering Digital Excellence Across East Africa
                         </h3>
+                        
+                        <!-- Image Insert -->
+                        <div class="mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 hover:border-maroon-500/50 transition-all duration-500">
+                            <img 
+                                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80" 
+                                alt="Professional team collaboration"
+                                class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
+                        
                         <div class="space-y-6 text-lg text-gray-200 leading-relaxed">
                             <p>
-                                <strong class="text-white">NebTech</strong> is East Africa's premier Enterprise Software Solutions provider, specializing in digital transformation through high-impact technology. With over 12 years of proven excellence, we partner with leading organizations to design, implement, and optimize mission-critical ERP, AI, and Cybersecurity systems.
+                                <strong class="text-white">NebTech</strong> is East Africa's premier Enterprise Software Solutions provider, specializing in digital transformation through high-impact technology. With over 12 years of proven excellence, we deliver mission-critical systems across the region.
                             </p>
                             <p>
-                                Our multidisciplinary team of 75+ experts combines deep technical expertise with strategic business acumen, delivering software solutions that perfectly align technology investments with organizational objectives. From AI-powered automation to secure enterprise architectures, we build the foundations for tomorrow's success.
-                            </p>
-                            <p>
-                                Headquartered in Nairobi, Kenya, we serve clients across financial services, manufacturing, retail, and healthcare sectors throughout East Africa. Our commitment to excellence has earned us ISO 27001 certification and partnerships with global technology leaders in ERP and security.
+                                Our multidisciplinary team of 75+ experts combines deep technical expertise with strategic business acumen, serving clients across financial services, manufacturing, retail, and healthcare sectors.
                             </p>
                         </div>
 
@@ -500,7 +513,7 @@ onUnmounted(() => {
                         Driving Africa's Digital Future Forward
                     </h3>
                     <p class="text-xl text-gray-300 leading-relaxed">
-                        We exist to empower organizations with technology that transforms challenges into competitive advantages and aspirations into achievements.
+                        We exist to empower organizations with technology that transforms challenges into competitive advantages.
                     </p>
                 </div>
 
@@ -513,26 +526,26 @@ onUnmounted(() => {
                             </div>
                             <h4 class="text-3xl font-bold text-white mb-6">Our Mission</h4>
                             <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                                To deliver world-class technology solutions that enable African businesses to compete globally, through strategic consulting, innovative engineering, and unwavering commitment to client success.
+                                To deliver world-class technology solutions that enable African businesses to compete globally through strategic consulting, innovative engineering, and unwavering commitment to client success.
                             </p>
                             <ul class="space-y-4">
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Deliver measurable business value through innovative technology solutions</span>
+                                    <span class="text-base">Deliver measurable business value through innovative technology</span>
                                 </li>
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Build long-term partnerships based on trust, transparency, and results</span>
+                                    <span class="text-base">Build partnerships based on trust and results</span>
                                 </li>
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Foster continuous innovation through learning and adaptation</span>
+                                    <span class="text-base">Foster continuous innovation and learning</span>
                                 </li>
                             </ul>
                         </div>
@@ -546,26 +559,26 @@ onUnmounted(() => {
                             </div>
                             <h4 class="text-3xl font-bold text-white mb-6">Our Vision</h4>
                             <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                                To be East Africa's most trusted technology partner, recognized for innovation excellence, and our pivotal role in shaping the region's digital economy and competitive landscape.
+                                To be East Africa's most trusted technology partner, recognized for innovation excellence and our pivotal role in shaping the region's digital economy.
                             </p>
                             <ul class="space-y-4">
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Lead Africa's enterprise technology transformation journey</span>
+                                    <span class="text-base">Lead Africa's enterprise technology transformation</span>
                                 </li>
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Set the benchmark for technical excellence and innovation</span>
+                                    <span class="text-base">Set the benchmark for technical excellence</span>
                                 </li>
                                 <li class="flex items-start gap-4 text-gray-400">
                                     <svg class="w-6 h-6 text-maroon-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-base">Empower businesses to thrive in the global digital economy</span>
+                                    <span class="text-base">Empower businesses in the global economy</span>
                                 </li>
                             </ul>
                         </div>
@@ -593,7 +606,7 @@ onUnmounted(() => {
             </div>
         </section>
 
-        <!-- Services Section with Background -->
+        <!-- Services Section with Images -->
         <section id="services" class="relative py-32 overflow-hidden bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-20 anim-fade-up">
@@ -602,7 +615,7 @@ onUnmounted(() => {
                         Comprehensive Technology Solutions
                     </h3>
                     <p class="text-xl text-gray-700 leading-relaxed">
-                        End-to-end capabilities spanning strategy, implementation, and managed services to accelerate your digital transformation journey.
+                        End-to-end capabilities spanning strategy, implementation, and managed services.
                     </p>
                 </div>
 
@@ -610,30 +623,43 @@ onUnmounted(() => {
                     <div 
                         v-for="(service, index) in services" 
                         :key="service.title" 
-                        class="anim-stagger bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-3xl p-8 hover:border-maroon-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group" 
+                        class="anim-stagger bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-3xl overflow-hidden hover:border-maroon-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group" 
                         :style="{ transitionDelay: `${index * 100}ms` }"
                     >
-                        <div class="w-16 h-16 bg-gradient-to-br from-maroon-100 to-orange-100 border-2 border-maroon-300 rounded-2xl flex items-center justify-center text-4xl mb-6 group-hover:bg-gradient-to-br group-hover:from-maroon-600 group-hover:to-maroon-700 group-hover:scale-110 transition-all duration-300 shadow-lg">
-                            {{ service.icon }}
+                        <!-- Service Image -->
+                        <div class="relative h-48 overflow-hidden">
+                            <img 
+                                :src="service.image" 
+                                :alt="service.title"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-2xl flex items-center justify-center text-3xl shadow-xl">
+                                {{ service.icon }}
+                            </div>
                         </div>
-                        <h4 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-maroon-600 transition-colors duration-300">
-                            {{ service.title }}
-                        </h4>
-                        <p class="text-gray-600 leading-relaxed mb-6">
-                            {{ service.description }}
-                        </p>
-                        <ul class="space-y-3">
-                            <li 
-                                v-for="feature in service.features" 
-                                :key="feature" 
-                                class="flex items-center gap-3 text-sm text-gray-700"
-                            >
-                                <svg class="w-5 h-5 text-maroon-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="font-medium">{{ feature }}</span>
-                            </li>
-                        </ul>
+                        
+                        <!-- Service Content -->
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-maroon-600 transition-colors duration-300">
+                                {{ service.title }}
+                            </h4>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                {{ service.description }}
+                            </p>
+                            <ul class="space-y-3">
+                                <li 
+                                    v-for="feature in service.features" 
+                                    :key="feature" 
+                                    class="flex items-center gap-3 text-sm text-gray-700"
+                                >
+                                    <svg class="w-5 h-5 text-maroon-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-medium">{{ feature }}</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -659,7 +685,7 @@ onUnmounted(() => {
                                 Let's Transform Your Business Together
                             </h2>
                             <p class="text-xl text-gray-200 mb-12 leading-relaxed">
-                                Schedule a consultation with our experts to discuss your technology needs and discover how we can accelerate your digital transformation with proven, enterprise-grade solutions.
+                                Schedule a consultation with our experts to discuss your technology needs and discover how we can accelerate your digital transformation.
                             </p>
                             
                             <div class="space-y-6">
