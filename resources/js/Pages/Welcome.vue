@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import { ref, onMounted, onUnmounted, nextTick } from 'vue';
+import WhatsAppButton from '@/Components/WhatsAppButton.vue';
 
 defineProps({
     canLogin: { type: Boolean },
@@ -701,7 +702,7 @@ onUnmounted(() => {
                                     </div>
                                 </a>
 
-                                <a href="tel:+254725830546" class="flex items-center gap-5 group">
+                                <a href="tel:0725830546" class="flex items-center gap-5 group">
                                     <div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center group-hover:bg-maroon-600 transition-all duration-300 shadow-lg">
                                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -709,7 +710,7 @@ onUnmounted(() => {
                                     </div>
                                     <div>
                                         <div class="text-sm text-gray-400 font-semibold">Call Us</div>
-                                        <div class="text-xl font-bold text-white group-hover:text-maroon-300 transition-colors">+254 725 830 546</div>
+                                        <div class="text-xl font-bold text-white group-hover:text-maroon-300 transition-colors">0725830546</div>
                                     </div>
                                 </a>
 
@@ -867,6 +868,9 @@ onUnmounted(() => {
                 </div>
             </div>
         </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <WhatsAppButton />
     </div>
 </template>
 
